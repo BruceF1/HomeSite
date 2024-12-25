@@ -1,0 +1,179 @@
+:root {
+    --accent: #0CF5BC;
+    --white: #ffffff;
+    --dark: #000000
+    --darkgreen: #045256
+  }
+
+  .koulen-regular {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+
+  .navbar {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Optionally, you can target specific elements within the navbar */
+.navbar-brand {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav-item {
+    padding-right: 30px;
+}
+
+.title{
+    margin-top: 25%;
+    font-family: "Koulen", sans-serif;
+    font-size: 64px;
+    color: var(--accent);
+    text-align: left;
+    letter-spacing: 8px;
+}
+
+.titleinvert{
+  margin-top: 25%;
+  font-family: "Koulen", sans-serif;
+  font-size: 64px;
+  color: var(--accent);
+  text-align: left;
+  letter-spacing: 8px;
+  color: var(--darkgreen);
+  
+}
+
+.subtitle{
+  font-family: "Koulen", sans-serif;
+  font-size: 20px;
+  color: var(--white);
+  text-align: left;
+  letter-spacing: 17px;
+}
+
+.subtitleinvert{
+  font-family: "Koulen", sans-serif;
+  font-size: 20px;
+  color: var(--accent);
+  text-align: left;
+  letter-spacing: 17px;
+}
+
+.quotetext {
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--dark);
+  text-align: left;
+}
+
+.standardtext {
+  font-family: "Roboto Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+}
+
+a,ol,li,ul {
+  font-family: "Roboto Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+  color: #0cf8bf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9cffe8;
+}
+
+
+h1 { 
+  font-family: "Koulen", sans-serif;
+  font-size: 26px;
+  color: var(--accent);
+}
+
+h3 {
+  font-family: "Arapey", sans-serif;
+  font-size: 16px;
+  color: var(--dark);
+  text-align: left;
+}
+
+.header {
+  height: 1024px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.whitebg {
+  height: 100%;
+  padding: 60px;
+  text-align: center;
+  background: var(--white);
+  color: var(--dark);
+  font-size: 30px;
+}
+
+.footerstyle {
+  text-align: center;
+  background: var(--white);
+  color: var(--dark);
+}
+
+.darkbg {
+  height: 100%;
+  padding: 60px;
+  text-align: center;
+  background: --dark;
+  color: var(--white);
+  font-size: 30px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+}
+
+#background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none; /* Ensure the canvas doesn't intercept any mouse events */
+  background-image: linear-gradient(155deg, rgba(4,82,86,1) 0%, rgba(4,82,86,1) 27%, rgba(2,2,2,1) 100%);
+}
+
+.content {
+  height:100%;
+  /* height: 1024px; */
+  position: relative;
+  z-index: 1; /* Ensure content is above the canvas */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
